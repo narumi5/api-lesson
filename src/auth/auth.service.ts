@@ -27,11 +27,11 @@ export class AuthService {
                 message: 'ok',
             };
         }catch (error) {
-            if (error interfaceof PrismaClientKnownRequestError) {
-                if (error.code === 'P2002') {
-                    throw new ForbiddenException('This email is already taken');
-                }
-            }
+            // if (error interfaceof PrismaClientKnownRequestError) {
+            //     if (error.code === 'P2002') {
+            //         throw new ForbiddenException('This email is already taken');
+            //     }
+            // }
             throw error;
         }
     }
